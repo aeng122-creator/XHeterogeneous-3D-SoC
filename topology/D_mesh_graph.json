@@ -1,0 +1,725 @@
+{
+  "schema": "xh_v3_1_mesh_graph_v1",
+  "NOT_A_GEM5_CONFIG": true,
+  "configuration": "D",
+  "clustered": true,
+  "fat_center_links": true,
+  "clock_hz": 2500000000,
+  "rows": 4,
+  "cols": 7,
+  "router_count": 28,
+  "routers": [
+    {
+      "id": 0,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": 1,
+      "x": 1,
+      "y": 0
+    },
+    {
+      "id": 2,
+      "x": 2,
+      "y": 0
+    },
+    {
+      "id": 3,
+      "x": 3,
+      "y": 0
+    },
+    {
+      "id": 4,
+      "x": 4,
+      "y": 0
+    },
+    {
+      "id": 5,
+      "x": 5,
+      "y": 0
+    },
+    {
+      "id": 6,
+      "x": 6,
+      "y": 0
+    },
+    {
+      "id": 7,
+      "x": 0,
+      "y": 1
+    },
+    {
+      "id": 8,
+      "x": 1,
+      "y": 1
+    },
+    {
+      "id": 9,
+      "x": 2,
+      "y": 1
+    },
+    {
+      "id": 10,
+      "x": 3,
+      "y": 1
+    },
+    {
+      "id": 11,
+      "x": 4,
+      "y": 1
+    },
+    {
+      "id": 12,
+      "x": 5,
+      "y": 1
+    },
+    {
+      "id": 13,
+      "x": 6,
+      "y": 1
+    },
+    {
+      "id": 14,
+      "x": 0,
+      "y": 2
+    },
+    {
+      "id": 15,
+      "x": 1,
+      "y": 2
+    },
+    {
+      "id": 16,
+      "x": 2,
+      "y": 2
+    },
+    {
+      "id": 17,
+      "x": 3,
+      "y": 2
+    },
+    {
+      "id": 18,
+      "x": 4,
+      "y": 2
+    },
+    {
+      "id": 19,
+      "x": 5,
+      "y": 2
+    },
+    {
+      "id": 20,
+      "x": 6,
+      "y": 2
+    },
+    {
+      "id": 21,
+      "x": 0,
+      "y": 3
+    },
+    {
+      "id": 22,
+      "x": 1,
+      "y": 3
+    },
+    {
+      "id": 23,
+      "x": 2,
+      "y": 3
+    },
+    {
+      "id": 24,
+      "x": 3,
+      "y": 3
+    },
+    {
+      "id": 25,
+      "x": 4,
+      "y": 3
+    },
+    {
+      "id": 26,
+      "x": 5,
+      "y": 3
+    },
+    {
+      "id": 27,
+      "x": 6,
+      "y": 3
+    }
+  ],
+  "endpoints": {
+    "GPU": 10,
+    "NPU": 17,
+    "L3_0": 3,
+    "L3_1": 9,
+    "L3_2": 11,
+    "L3_3": 16,
+    "L3_4": 18,
+    "L3_5": 24,
+    "L3_6": 2,
+    "L3_7": 4,
+    "DDR": 7,
+    "VRAM": 13,
+    "P0": 23,
+    "P1": 25,
+    "P2": 1,
+    "P3": 5,
+    "P4": 22,
+    "P5": 26,
+    "P6": 0,
+    "P7": 6,
+    "E0": 14,
+    "E1": 20,
+    "E2": 21,
+    "E3": 27,
+    "E4": 8,
+    "E5": 12,
+    "E6": 15,
+    "E7": 19
+  },
+  "directed_links": [
+    {
+      "src": 0,
+      "dst": 1,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 0,
+      "dst": 7,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 1,
+      "dst": 0,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 1,
+      "dst": 2,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 1,
+      "dst": 8,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 2,
+      "dst": 1,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 2,
+      "dst": 3,
+      "width_bits": 256,
+      "latency_cycles": 1
+    },
+    {
+      "src": 2,
+      "dst": 9,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 3,
+      "dst": 2,
+      "width_bits": 256,
+      "latency_cycles": 1
+    },
+    {
+      "src": 3,
+      "dst": 4,
+      "width_bits": 256,
+      "latency_cycles": 1
+    },
+    {
+      "src": 3,
+      "dst": 10,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 4,
+      "dst": 3,
+      "width_bits": 256,
+      "latency_cycles": 1
+    },
+    {
+      "src": 4,
+      "dst": 5,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 4,
+      "dst": 11,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 5,
+      "dst": 4,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 5,
+      "dst": 6,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 5,
+      "dst": 12,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 6,
+      "dst": 5,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 6,
+      "dst": 13,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 7,
+      "dst": 0,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 7,
+      "dst": 8,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 7,
+      "dst": 14,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 8,
+      "dst": 1,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 8,
+      "dst": 7,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 8,
+      "dst": 9,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 8,
+      "dst": 15,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 9,
+      "dst": 2,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 9,
+      "dst": 8,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 9,
+      "dst": 10,
+      "width_bits": 256,
+      "latency_cycles": 1
+    },
+    {
+      "src": 9,
+      "dst": 16,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 10,
+      "dst": 3,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 10,
+      "dst": 9,
+      "width_bits": 256,
+      "latency_cycles": 1
+    },
+    {
+      "src": 10,
+      "dst": 11,
+      "width_bits": 256,
+      "latency_cycles": 1
+    },
+    {
+      "src": 10,
+      "dst": 17,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 11,
+      "dst": 4,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 11,
+      "dst": 10,
+      "width_bits": 256,
+      "latency_cycles": 1
+    },
+    {
+      "src": 11,
+      "dst": 12,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 11,
+      "dst": 18,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 12,
+      "dst": 5,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 12,
+      "dst": 11,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 12,
+      "dst": 13,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 12,
+      "dst": 19,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 13,
+      "dst": 6,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 13,
+      "dst": 12,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 13,
+      "dst": 20,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 14,
+      "dst": 7,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 14,
+      "dst": 15,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 14,
+      "dst": 21,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 15,
+      "dst": 8,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 15,
+      "dst": 14,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 15,
+      "dst": 16,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 15,
+      "dst": 22,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 16,
+      "dst": 9,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 16,
+      "dst": 15,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 16,
+      "dst": 17,
+      "width_bits": 256,
+      "latency_cycles": 1
+    },
+    {
+      "src": 16,
+      "dst": 23,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 17,
+      "dst": 10,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 17,
+      "dst": 16,
+      "width_bits": 256,
+      "latency_cycles": 1
+    },
+    {
+      "src": 17,
+      "dst": 18,
+      "width_bits": 256,
+      "latency_cycles": 1
+    },
+    {
+      "src": 17,
+      "dst": 24,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 18,
+      "dst": 11,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 18,
+      "dst": 17,
+      "width_bits": 256,
+      "latency_cycles": 1
+    },
+    {
+      "src": 18,
+      "dst": 19,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 18,
+      "dst": 25,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 19,
+      "dst": 12,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 19,
+      "dst": 18,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 19,
+      "dst": 20,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 19,
+      "dst": 26,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 20,
+      "dst": 13,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 20,
+      "dst": 19,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 20,
+      "dst": 27,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 21,
+      "dst": 14,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 21,
+      "dst": 22,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 22,
+      "dst": 15,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 22,
+      "dst": 21,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 22,
+      "dst": 23,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 23,
+      "dst": 16,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 23,
+      "dst": 22,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 23,
+      "dst": 24,
+      "width_bits": 256,
+      "latency_cycles": 1
+    },
+    {
+      "src": 24,
+      "dst": 17,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 24,
+      "dst": 23,
+      "width_bits": 256,
+      "latency_cycles": 1
+    },
+    {
+      "src": 24,
+      "dst": 25,
+      "width_bits": 256,
+      "latency_cycles": 1
+    },
+    {
+      "src": 25,
+      "dst": 18,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 25,
+      "dst": 24,
+      "width_bits": 256,
+      "latency_cycles": 1
+    },
+    {
+      "src": 25,
+      "dst": 26,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 26,
+      "dst": 19,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 26,
+      "dst": 25,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 26,
+      "dst": 27,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 27,
+      "dst": 20,
+      "width_bits": 128,
+      "latency_cycles": 1
+    },
+    {
+      "src": 27,
+      "dst": 26,
+      "width_bits": 128,
+      "latency_cycles": 1
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "X-Heterogeneous 3D SoC V3.1",
+  "status": "research architecture / not fabricated",
+  "silicon_tiers": 2,
+  "tier1": {
+    "cpu": {"p_cores": 8, "p_threads": 16, "e_cores": 32, "e_threads": 32, "total_cores": 40, "total_logical_threads": 48},
+    "l1_total_mib": 3, "l1_p_each_kib": 128, "l1_e_each_kib": 64,
+    "l2_total_mib": 48, "l2_p_each_mib": 2, "l2_e_clusters": 8, "l2_per_e_cluster_mib": 4,
+    "fabric": "clustered mesh with E groups of 4, configurable fat center links"
+  },
+  "tier2": {
+    "units": ["GPU", "NPU", "L3"],
+    "l3_total_mib": 112, "l3_cpu_shared_mib": 96, "l3_gpu_mib": 16,
+    "l3_policy": ["non-inclusive", "selective bypass/reclamation", "compression prototype", "CPU QoS"],
+    "vertical_links": "multiple conceptual links; physical feasibility not verified"
+  },
+  "gpu": "functional memory request source only; no graphics SM or shader execution model",
+  "memory": {"ddr5": "quad-channel; sustained proxy 140 GB/s", "gpu_vram": "separate external 350 GB/s sustained proxy"},
+  "cooling": "custom stepped copper IHS with liquid cooling; thermal simulation not yet performed",
+  "power": {"package_sustained_target_W": 120, "package_boost_target_W": 140, "power_status": "not verified; NoC-only energy proxy in test model"},
+  "mesh_proxy": {"frequency_ghz": 2.5, "regular_link_bits": 128, "fat_center_link_bits": 256,
+    "E_wfq_weight": 0.125, "router_power_gating": "50-cycle idle, 4-cycle wake illustrative"}
+}

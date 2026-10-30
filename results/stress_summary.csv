@@ -1,0 +1,5 @@
+mode,routers,completed,unfinished,CPU_P_p95_cycles,CPU_E_p95_cycles,GPU_p95_cycles,GPU_p99_cycles,NPU_p95_cycles,L3_miss_ratio_of_probes,noc_power_proxy_W,noc_energy_per_request_nJ,center_cut_bytes,router_wake_events,drain_cycles
+A_unclustered_regular,54,3045,0,3618.0,3717.0,156.0,170.0,3570.0,0.983,6.012,3.946,183024,575,3896
+B_clustered_regular,28,3045,0,3571.0,3731.0,167.0,183.0,3491.0,0.983,4.512,2.945,212144,213,3869
+C_unclustered_fat,54,3045,0,3641.0,3699.0,138.0,147.0,3537.0,0.983,6.015,3.925,181808,628,3868
+D_clustered_fat,28,3045,0,3621.0,3683.0,131.0,137.0,3543.0,0.9836,4.405,2.869,213952,210,3857

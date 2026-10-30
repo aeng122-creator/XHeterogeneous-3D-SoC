@@ -1,0 +1,352 @@
+{
+  "metadata": {
+    "clock_hz": 2500000000,
+    "seed": 117,
+    "injection_cycles": 2400,
+    "intensity": 0.45,
+    "trace_type": "synthetic_8k_like_memory_traffic",
+    "model": "cycle-stepped network/cache proxy; not gem5/GPGPU-Sim"
+  },
+  "results": {
+    "A_unclustered_regular": {
+      "mode": "unclustered + regular",
+      "clustered": false,
+      "fat_center_links": false,
+      "routers": 54,
+      "rows": 6,
+      "cols": 9,
+      "cycles": 2768,
+      "trace_requests": 1735,
+      "completed": 1735,
+      "unfinished": 0,
+      "drain_cycles": 369,
+      "CPU_P": {
+        "issued": 480,
+        "completed": 480,
+        "mean_cycles": 266.76,
+        "p95_cycles": 370.0,
+        "p99_cycles": 384.0
+      },
+      "CPU_E": {
+        "issued": 863,
+        "completed": 863,
+        "mean_cycles": 285.86,
+        "p95_cycles": 384.0,
+        "p99_cycles": 403.0
+      },
+      "GPU": {
+        "issued": 343,
+        "completed": 343,
+        "mean_cycles": 117.87,
+        "p95_cycles": 134.0,
+        "p99_cycles": 142.0
+      },
+      "NPU": {
+        "issued": 49,
+        "completed": 49,
+        "mean_cycles": 274.04,
+        "p95_cycles": 343.0,
+        "p99_cycles": 354.0
+      },
+      "L1_hits": 8,
+      "L2_hits": 43,
+      "L3_hits": 57,
+      "L3_misses": 1627,
+      "L3_miss_ratio_of_probes": 0.9662,
+      "bypassed_stream_lines": 469,
+      "mem_DDR_MB": 0.0824,
+      "mem_VRAM_MB": 0.0218,
+      "network_byte_hops": 1157680,
+      "network_packet_hops": 28870,
+      "center_cut_bytes": 106976,
+      "max_link_packets": [
+        [
+          "19->18",
+          814
+        ],
+        [
+          "20->19",
+          705
+        ],
+        [
+          "18->19",
+          644
+        ],
+        [
+          "21->20",
+          627
+        ],
+        [
+          "19->20",
+          594
+        ],
+        [
+          "20->21",
+          558
+        ]
+      ],
+      "noc_energy_proxy_J": 6.703438800000004e-06,
+      "noc_energy_per_request_nJ": 3.864,
+      "router_wake_events": 340,
+      "noc_power_proxy_W": 6.054,
+      "noc_router_leakage_proxy_W": 1.258,
+      "noc_energy_model_notes": "4 pJ per byte-hop; 25/4 mW active/gated router; 2 nJ / wake; 4-cycle wake, 50-cycle idle threshold. Synthetic power proxy, NOT signoff.",
+      "simulator_limitations": "Unbounded router queues; atomic packets serialized per link; no backpressure/VC/deadlock/coherence/ISA/GPU SM modeling; source-route adaptive paths; no real workload tracing; DDR response latency fixed."
+    },
+    "B_clustered_regular": {
+      "mode": "clustered + regular",
+      "clustered": true,
+      "fat_center_links": false,
+      "routers": 28,
+      "rows": 4,
+      "cols": 7,
+      "cycles": 2744,
+      "trace_requests": 1735,
+      "completed": 1735,
+      "unfinished": 0,
+      "drain_cycles": 345,
+      "CPU_P": {
+        "issued": 480,
+        "completed": 480,
+        "mean_cycles": 252.57,
+        "p95_cycles": 354.0,
+        "p99_cycles": 367.0
+      },
+      "CPU_E": {
+        "issued": 863,
+        "completed": 863,
+        "mean_cycles": 267.81,
+        "p95_cycles": 367.0,
+        "p99_cycles": 383.0
+      },
+      "GPU": {
+        "issued": 343,
+        "completed": 343,
+        "mean_cycles": 110.3,
+        "p95_cycles": 128.0,
+        "p99_cycles": 134.0
+      },
+      "NPU": {
+        "issued": 49,
+        "completed": 49,
+        "mean_cycles": 260.59,
+        "p95_cycles": 334.0,
+        "p99_cycles": 344.0
+      },
+      "L1_hits": 7,
+      "L2_hits": 44,
+      "L3_hits": 58,
+      "L3_misses": 1626,
+      "L3_miss_ratio_of_probes": 0.9656,
+      "bypassed_stream_lines": 469,
+      "mem_DDR_MB": 0.0823,
+      "mem_VRAM_MB": 0.0218,
+      "network_byte_hops": 961328,
+      "network_packet_hops": 23900,
+      "center_cut_bytes": 122800,
+      "max_link_packets": [
+        [
+          "8->7",
+          889
+        ],
+        [
+          "9->8",
+          796
+        ],
+        [
+          "8->9",
+          679
+        ],
+        [
+          "7->8",
+          649
+        ],
+        [
+          "10->9",
+          649
+        ],
+        [
+          "1->2",
+          620
+        ]
+      ],
+      "noc_energy_proxy_J": 4.7537416e-06,
+      "noc_energy_per_request_nJ": 2.74,
+      "router_wake_events": 81,
+      "noc_power_proxy_W": 4.331,
+      "noc_router_leakage_proxy_W": 0.68,
+      "noc_energy_model_notes": "4 pJ per byte-hop; 25/4 mW active/gated router; 2 nJ / wake; 4-cycle wake, 50-cycle idle threshold. Synthetic power proxy, NOT signoff.",
+      "simulator_limitations": "Unbounded router queues; atomic packets serialized per link; no backpressure/VC/deadlock/coherence/ISA/GPU SM modeling; source-route adaptive paths; no real workload tracing; DDR response latency fixed."
+    },
+    "C_unclustered_fat": {
+      "mode": "unclustered + fat",
+      "clustered": false,
+      "fat_center_links": true,
+      "routers": 54,
+      "rows": 6,
+      "cols": 9,
+      "cycles": 2768,
+      "trace_requests": 1735,
+      "completed": 1735,
+      "unfinished": 0,
+      "drain_cycles": 369,
+      "CPU_P": {
+        "issued": 480,
+        "completed": 480,
+        "mean_cycles": 263.82,
+        "p95_cycles": 363.0,
+        "p99_cycles": 374.0
+      },
+      "CPU_E": {
+        "issued": 863,
+        "completed": 863,
+        "mean_cycles": 281.77,
+        "p95_cycles": 380.0,
+        "p99_cycles": 394.0
+      },
+      "GPU": {
+        "issued": 343,
+        "completed": 343,
+        "mean_cycles": 112.43,
+        "p95_cycles": 127.0,
+        "p99_cycles": 131.0
+      },
+      "NPU": {
+        "issued": 49,
+        "completed": 49,
+        "mean_cycles": 271.24,
+        "p95_cycles": 346.0,
+        "p99_cycles": 352.0
+      },
+      "L1_hits": 7,
+      "L2_hits": 44,
+      "L3_hits": 56,
+      "L3_misses": 1628,
+      "L3_miss_ratio_of_probes": 0.9667,
+      "bypassed_stream_lines": 469,
+      "mem_DDR_MB": 0.0824,
+      "mem_VRAM_MB": 0.0218,
+      "network_byte_hops": 1155392,
+      "network_packet_hops": 28826,
+      "center_cut_bytes": 106720,
+      "max_link_packets": [
+        [
+          "19->18",
+          799
+        ],
+        [
+          "20->19",
+          697
+        ],
+        [
+          "18->19",
+          643
+        ],
+        [
+          "19->20",
+          625
+        ],
+        [
+          "21->20",
+          620
+        ],
+        [
+          "21->22",
+          618
+        ]
+      ],
+      "noc_energy_proxy_J": 6.697070400000003e-06,
+      "noc_energy_per_request_nJ": 3.86,
+      "router_wake_events": 344,
+      "noc_power_proxy_W": 6.049,
+      "noc_router_leakage_proxy_W": 1.253,
+      "noc_energy_model_notes": "4 pJ per byte-hop; 25/4 mW active/gated router; 2 nJ / wake; 4-cycle wake, 50-cycle idle threshold. Synthetic power proxy, NOT signoff.",
+      "simulator_limitations": "Unbounded router queues; atomic packets serialized per link; no backpressure/VC/deadlock/coherence/ISA/GPU SM modeling; source-route adaptive paths; no real workload tracing; DDR response latency fixed."
+    },
+    "D_clustered_fat": {
+      "mode": "clustered + fat",
+      "clustered": true,
+      "fat_center_links": true,
+      "routers": 28,
+      "rows": 4,
+      "cols": 7,
+      "cycles": 2738,
+      "trace_requests": 1735,
+      "completed": 1735,
+      "unfinished": 0,
+      "drain_cycles": 339,
+      "CPU_P": {
+        "issued": 480,
+        "completed": 480,
+        "mean_cycles": 248.37,
+        "p95_cycles": 345.0,
+        "p99_cycles": 360.0
+      },
+      "CPU_E": {
+        "issued": 863,
+        "completed": 863,
+        "mean_cycles": 261.44,
+        "p95_cycles": 355.0,
+        "p99_cycles": 365.0
+      },
+      "GPU": {
+        "issued": 343,
+        "completed": 343,
+        "mean_cycles": 103.94,
+        "p95_cycles": 121.0,
+        "p99_cycles": 126.0
+      },
+      "NPU": {
+        "issued": 49,
+        "completed": 49,
+        "mean_cycles": 256.31,
+        "p95_cycles": 326.0,
+        "p99_cycles": 339.0
+      },
+      "L1_hits": 7,
+      "L2_hits": 44,
+      "L3_hits": 58,
+      "L3_misses": 1626,
+      "L3_miss_ratio_of_probes": 0.9656,
+      "bypassed_stream_lines": 469,
+      "mem_DDR_MB": 0.0823,
+      "mem_VRAM_MB": 0.0218,
+      "network_byte_hops": 953936,
+      "network_packet_hops": 23768,
+      "center_cut_bytes": 122800,
+      "max_link_packets": [
+        [
+          "8->7",
+          880
+        ],
+        [
+          "9->8",
+          785
+        ],
+        [
+          "8->9",
+          702
+        ],
+        [
+          "7->8",
+          658
+        ],
+        [
+          "10->9",
+          649
+        ],
+        [
+          "9->10",
+          640
+        ]
+      ],
+      "noc_energy_proxy_J": 4.7396612e-06,
+      "noc_energy_per_request_nJ": 2.732,
+      "router_wake_events": 89,
+      "noc_power_proxy_W": 4.328,
+      "noc_router_leakage_proxy_W": 0.681,
+      "noc_energy_model_notes": "4 pJ per byte-hop; 25/4 mW active/gated router; 2 nJ / wake; 4-cycle wake, 50-cycle idle threshold. Synthetic power proxy, NOT signoff.",
+      "simulator_limitations": "Unbounded router queues; atomic packets serialized per link; no backpressure/VC/deadlock/coherence/ISA/GPU SM modeling; source-route adaptive paths; no real workload tracing; DDR response latency fixed."
+    }
+  }
+}
