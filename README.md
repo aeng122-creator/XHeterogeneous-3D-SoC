@@ -1,8 +1,6 @@
 # X-Heterogeneous 3D SoC V3.1 — Co-Designed Academic Research Proxy
 
-![Architectural Blueprint](./Visual_References/Exploded Chiplet Architecture Infographic.png)
-
-
+![Architectural Blueprint](./Exploded%20Chiplet%20Architecture%20Infographic.png)
 
 
 
