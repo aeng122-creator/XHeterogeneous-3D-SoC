@@ -1,10 +1,8 @@
 # X-Heterogeneous 3D SoC V3.1 — Co-Designed Academic Research Proxy
 
-![Architectural Blueprint](Visual_References/a_detailed_infographic_style_technical_3d_render_o.png)
+![Architectural Blueprint](./Visual_References/a_detailed_infographic_style_technical_3d_render_o.png)
 
 **Status: A RUNNABLE cycle-stepped synthetic memory/network prototype, NOT gem5, GPGPU-Sim, RTL, silicon characterization, or a real 8K rendering engine.**
-
-تم بناء نموذج بايثون قابل للتشغيل لاختبار الاتجاهات المعمارية الأساسية. الهدف منه اختبار تصميم الشبكة مبكرًا، وليس إصدار أرقام أداء فعلية لمعالج لم يُصنع.
 
 ---
 
@@ -100,12 +98,12 @@ To turn this research proxy into a sign-off production-ready silicon design, the
 4. **Memory Subsystem Realism:** Realistic DRAM and GDDR/HBM cycle timings accounting for refresh cycles, precharge overhead, and structural bank conflicts.
 5. **Physical Floorplan Design:** Physical routing placement, cross-tier 3D link TSV count/density, thermal RC/FEA/CFD boundaries, power distribution networks (PDN), and global clock trees.
 6. **Energy Sign-off:** Silicon characterized SRAM cell models, compressor hardware pipelines, router switches, and wakeup circuit energy. *The 120W/140W targets are purely projective and are not validated by this model.*
-7. **Unified Storage Boundary:** GPU L3 is 16MiB, not VRAM; GPU requires an explicit external memory model or a real unified memory architecture (UMA).
+7. **Unified Storage Boundary:** GPU L3 is 16MiB, not VRAM; GPU requires an explicit external memory model or a real unified memory architecture (UMA) framework.
 
 ---
 
 ## ⚖️ License & Verification Statement
 
-Distributed under the **Apache License 2.0**. Intellectual ownership belongs entirely to the repository creator. Any commercial implementation or architectural citation must explicitly reference this repository and author credits.
+Distributed under the **Apache License 2.0**. Intellectual ownership belongs entirely to the repository creator. Any commercial implementation, derivation, or architectural citation must explicitly reference this repository and author credits.
 
 No fabricated benchmarks. All numerical outcomes in `results/` come from the Python prototype described here. The actual gem5+GPGPU-Sim combined simulator is **not installed or executed** in this environment, so no gem5/Accel-Sim benchmark is claimed.
