@@ -1,6 +1,7 @@
 # X-Heterogeneous 3D SoC V3.1 — Co-Designed Academic Research Proxy
 
-![Architectural Blueprint](./Visual_References/a_detailed_infographic_style_technical_3d_render_o.png)
+![Architectural Blueprint](./visual_references/a_detailed_infographic_style_technical_3d_render_o.png)
+
 
 
 **Status: A RUNNABLE cycle-stepped synthetic memory/network prototype, NOT gem5, GPGPU-Sim, RTL, silicon characterization, or a real 8K rendering engine.**
